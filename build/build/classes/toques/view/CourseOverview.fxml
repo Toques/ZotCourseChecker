@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toques.view.CourseOverviewController">
+   <children>
+      <SplitPane prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ToolBar orientation="VERTICAL" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="9.0">
+         <items>
+            <Label text="GE Categories" />
+            <CheckBox fx:id="two" mnemonicParsing="false" text="II" />
+            <CheckBox fx:id="three" mnemonicParsing="false" text="III" />
+            <CheckBox fx:id="four" mnemonicParsing="false" text="IV" />
+            <CheckBox fx:id="five" mnemonicParsing="false" text="V" />
+            <CheckBox fx:id="six" mnemonicParsing="false" text="VI" />
+            <CheckBox fx:id="seven" mnemonicParsing="false" text="VII" />
+            <CheckBox fx:id="eight" mnemonicParsing="false" text="VIII" />
+         </items>
+      </ToolBar>
+      <ListView fx:id="courseList" layoutY="32.0" prefHeight="268.0" prefWidth="155.0" />
+      <Label layoutX="64.0" layoutY="6.0" text="Courses" AnchorPane.bottomAnchor="272.0" AnchorPane.rightAnchor="397.5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="81.0" startX="-74.0" AnchorPane.bottomAnchor="268.0" AnchorPane.rightAnchor="344.5" />
+      <Button mnemonicParsing="false" onAction="#handleStart" prefHeight="30.0" prefWidth="100.0" text="Start" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="12.0" />
+      <Label prefHeight="162.0" prefWidth="222.0" text="Instructions:&#10;&#10;1. Choose GE categories you want fulfilled&#10;2. Click Start" wrapText="true" AnchorPane.bottomAnchor="116.0" AnchorPane.rightAnchor="105.0" />
+      <ProgressBar prefWidth="200.0" progress="0.0" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="125.0" />
+      <HBox prefHeight="17.0" prefWidth="320.0" spacing="10.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="9.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="50.0" text="Status:" />
+            <Label fx:id="status" prefHeight="17.0" prefWidth="280.0" text="Waiting" AnchorPane.bottomAnchor="50.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
